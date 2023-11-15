@@ -3,11 +3,23 @@
     <nav class="site-nav">
       <a class="logo" href="#">
         <picture>
-          <source srcset="#" media="(min-width:1200px)" />
-          <source srcset="#" media="(min-width:768px)" />
+          <source
+            srcset="
+              ./images/logo/desktop-60.png    1x,
+              ./images/logo/desktop@2-120.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="./images/logo/tab-48.png 1x, ./images/logo/tab@2-96.png 2x"
+            media="(min-width:768px)"
+          />
 
-          <source srcset="#" media="(max-width:767px)" />
-          <img src="#" alt="Logo" />
+          <source
+            srcset="./images/logo/mob-41.png 1x, ./images/logo/mob@2-81.png 2x"
+            media="(max-width:767px)"
+          />
+          <img src="./images/logo/mob-41.png" alt="Logo" />
         </picture>
       </a>
 
