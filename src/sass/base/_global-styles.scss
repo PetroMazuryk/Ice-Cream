@@ -1,3 +1,15 @@
 body {
   font-family: $font-family, Arial, Helvetica, sans-serif;
+  top: 0 !important;
+  width: 100%;
+  background-image: url('../images/ice-cream/fon-2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.86;
+  color: getColor('first');
+  background-color: getColor('main-bg');
 }

@@ -1,0 +1,39 @@
+.hero {
+  position: relative;
+  padding-top: 20px;
+  background-color: getColor('main-bg');
+  min-height: 510px;
+  background-image: url('../images/ice-cream/mob-320.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/ice-cream/mob@2x-640.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/ice-cream/tab-768.png');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/ice-cream/tab@2-1534.png');
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: url('../images/ice-cream/desktop-1199.png');
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/ice-cream/desktop@2-2398.png');
+    }
+  }
+}
