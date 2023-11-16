@@ -12,4 +12,17 @@ body {
   line-height: 1.86;
   color: getColor('first');
   background-color: getColor('main-bg');
+
+  cursor: url(../images/svg/cursor-custom.svg), auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: url(../images/svg/cursor-pointer.svg), auto;
 }
