@@ -5,6 +5,9 @@ header {
   left: 0;
 }
 
+.header__container {
+  @include flexCentered(flex, center, space-between);
+}
 .logo {
   margin-top: 12px;
   display: block;
@@ -14,4 +17,52 @@ header {
   position: relative;
   z-index: 50;
   @include flexCentered(flex, center, space-between);
+}
+
+.hero__title {
+  text-transform: uppercase;
+  color: getColor('main-bg');
+  margin-bottom: 32px;
+  margin-top: 90px;
+  font-family: 'Seymour One';
+  font-size: 26px;
+  line-height: 1.27;
+  max-width: 247px;
+}
+
+.hero__button--list {
+  gap: 8px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero__button--link {
+  font-size: 8px;
+  line-height: 1.25;
+  @include centeredFlex();
+  transition: color $animation-transition;
+}
+.products-link {
+  width: 62px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid getColor('second-bg');
+  border-radius: 8px;
+  font-weight: 600;
+  color: #131313;
+  transition: border $animation-transition;
+
+  &:hover {
+    border-color: getColor('hover-btn');
+  }
+
+  &:disabled {
+    border-color: getColor('time');
+  }
+
+  &:focus {
+    border-color: getColor('hover-btn');
+    color: getColor('main-bg');
+  }
 }

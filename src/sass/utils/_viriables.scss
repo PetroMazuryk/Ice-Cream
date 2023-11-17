@@ -1,11 +1,13 @@
 $font-family: 'Montserrat';
-$animationTransition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$animation-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $colors: (
   'first': #131313,
   'main-bg': #fcfcfc,
   'first-bg': #84a178,
   'second-bg': #f8d24e,
+  'hover-btn': #7a7a7a,
+  'time': #ababab,
 );
 
 @function getColor($key) {
