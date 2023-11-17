@@ -19,6 +19,10 @@ header {
   @include flexCentered(flex, center, space-between);
 }
 
+.hero .container {
+  position: relative;
+}
+
 .hero__title {
   text-transform: uppercase;
   color: getColor('main-bg');
@@ -50,7 +54,7 @@ header {
   border: 2px solid getColor('second-bg');
   border-radius: 8px;
   font-weight: 600;
-  color: #131313;
+  color: getColor('first');
   transition: border $animation-transition;
 
   &:hover {
@@ -64,5 +68,97 @@ header {
   &:focus {
     border-color: getColor('hover-btn');
     color: getColor('main-bg');
+  }
+}
+
+.hero__info {
+  margin-left: 27%;
+}
+
+.hero__text {
+  width: 151px;
+  height: 85px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: getColor('main-bg');
+}
+
+.hero__arrow {
+  background-color: transparent;
+  border: 0;
+  width: 40px;
+  padding: 0;
+
+  &:hover,
+  &:focus {
+    transform: scale(1.3);
+  }
+}
+
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: absolute;
+  bottom: 46px;
+  right: 20px;
+}
+
+.language img {
+  cursor: url(../images/svg/cursor-pointer.svg), auto;
+}
+
+.hero__location--list {
+  position: absolute;
+  top: 0px;
+  right: 32;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero__location--item {
+  font-size: 28px;
+  line-height: 1.21;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.hero__location--place {
+  color: getColor('main-bg');
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 4px;
+  text-align: end;
+}
+
+.cafes {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+.food-truck {
+  width: 46px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav__list {
+    display: none;
+  }
+  .header-btn {
+    display: none;
+  }
+  .hero__text {
+    display: none;
+  }
+  .hero__arrow {
+    display: none;
+  }
+  .hero__location--list {
+    display: none;
   }
 }

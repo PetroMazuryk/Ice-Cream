@@ -8,3 +8,8 @@
   align-items: $align;
   justify-content: $justify;
 }
+
+@mixin font($fs, $lh) {
+  font-size: $fs;
+  line-height: calc($lh / $fs);
+}
