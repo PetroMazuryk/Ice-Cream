@@ -23,6 +23,20 @@
       (min-resolution: 2dppx) {
       background-image: url('../images/ice-cream/tab@2-1534.png');
     }
+
+    .hero .container {
+      position: relative;
+    }
+
+    .hero__title {
+      font-size: 18px;
+      margin-top: 84px;
+      max-width: 180px;
+    }
+
+    .hero__button--list {
+      margin-bottom: 56px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
