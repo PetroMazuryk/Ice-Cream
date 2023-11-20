@@ -1,2 +1,0 @@
-!function(){var e,t,n,o;e=document.querySelector("[data-menu-button]"),t=document.querySelector("[data-menu]"),n=document.querySelectorAll(".mob-list__link"),o=function(){var n="true"===e.getAttribute("aria-expanded")||"false";e.classList.toggle("is-open"),e.setAttribute("aria-expanded",!n),t.classList.toggle("is-open"),document.body.classList.toggle("modal-open")},e.addEventListener("click",(function(){o();for(var e=0;e<n.length;e++)n[e].onclick=function(e){e.preventDefault(),o()}}))}();
-//# sourceMappingURL=index.5ef21e11.js.map
