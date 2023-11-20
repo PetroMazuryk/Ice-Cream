@@ -1,0 +1,40 @@
+:root {
+  --white-color: #fff;
+  --black-color: #000;
+
+  --green-bg-color: #84a178;
+
+  --green-product-border-color: #96af8c;
+  --white-product-modal-color: #d9d9d9;
+  --green-product-modal-color: #9cbe8fb3;
+  --orange-product-modal-color: rgba(213, 117, 63, 0.7);
+  --product-modal-shadow-color: rgba(212, 20, 67, 0.1);
+
+  --light-green-products-bg-color: #aec6a5;
+  --green-products-bg-color: #9cbe8f;
+  --yellow-products-bg-color: #efd478;
+  --orange-products-bg-color: #d6936d;
+
+  --green-reviews-color: rgba(132, 161, 120, 1);
+  --gallery-bg-color: #f5f5f5;
+
+  --modal-form-input-color: rgba(248, 210, 78, 0.1);
+
+  --white-content-color: #fcfcfc;
+  --black-content-color: #131313;
+  --yellow-content-color: #f8d24e;
+  --green-content-color: #0a8817;
+
+  --about-yellow-color: rgba(248, 210, 78, 0.7);
+
+  --contacts-border-color: #e1e1e1;
+  --contacts-color-text-time: #ababab;
+  --contacts-bg-card-color: #ffffff;
+
+  --footer-copyright-color: #7a7a7a;
+  --footer-copyright-border: #e1e1e1;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-dur-and-func-btns: 1000ms ease-in-out;
+  --transition-modal-window: transform 1500ms ease;
+}
