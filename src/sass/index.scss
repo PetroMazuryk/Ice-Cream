@@ -1,16 +1,17 @@
 @import './utils/viriables';
 @import './utils/root-viriables';
 @import './utils/mixins';
+@import './utils/_placeholder';
 @import './utils/visually-hidden';
 
 @import './base/normalize';
 @import './base/global-styles';
 
 @import './components/container';
-@import './components/mobile-menu.scss';
-@import './components/buttons.scss';
+@import './components/mobile-menu';
+@import './components/buttons';
 
 @import './layout/hero-header';
 @import './layout/hero-ice-cream';
-@import './layout/_hero-burger';
+@import './layout/hero-burger';
 @import './layout/products';

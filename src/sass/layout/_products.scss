@@ -25,14 +25,6 @@
   }
 }
 
-// .products__section {
-//   border: none;
-//   // background-image: url('#');
-//   background-size: cover;
-//   background-repeat: no-repeat;
-//   background-position: center;
-// }
-
 .products__label {
   text-transform: uppercase;
   text-align: center;
@@ -135,20 +127,17 @@
 
 .products__name.cream::before {
   background-image: url('../images/products/ice-cream-mobile.png');
-  background-size: cover;
-  background-position: center;
+  @extend %background;
 }
 
 .products__name.coffee::before {
   background-image: url('../images/products/ice-coffee-mobile.png');
-  background-size: cover;
-  background-position: center;
+  @extend %background;
 }
 
 .products__name.milkshake::before {
   background-image: url('../images/products/milkshake-mobile.png');
-  background-size: cover;
-  background-position: center;
+  @extend %background;
 }
 
 .products__circle {
