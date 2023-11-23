@@ -36,3 +36,65 @@
     fill: getColor('main-bg');
   }
 }
+
+.button-yellow {
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+
+  color: var(--black-content-color);
+  background-color: var(--yellow-content-color);
+  outline: none;
+  transition: background-color 400ms var(--timing-function),
+    color 400ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--green-content-color);
+  }
+
+  &:focus {
+    color: var(--white-content-color);
+  }
+}
+
+.button-border-yellow {
+  padding: 10px 46px;
+  border-radius: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid var(--yellow-content-color);
+  color: var(--black-content-color);
+  outline: none;
+  transition: border var(--transition-dur-and-func-btns),
+    color var(--transition-dur-and-func-btns);
+
+  &:hover,
+  &:focus {
+    border: 2px solid var(--green-content-color);
+  }
+
+  &:focus {
+    color: var(--white-content-color);
+  }
+}
+
+.button-icon {
+  margin-left: 6px;
+  height: 12;
+  width: 12;
+  stroke: var(--black-content-color);
+  transition: stroke var(--transition-dur-and-func-btns);
+
+  .button-border-yellow:focus &,
+  .button-yellow:focus & {
+    stroke: var(--white-content-color);
+  }
+}
