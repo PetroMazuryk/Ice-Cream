@@ -1,0 +1,61 @@
+<section class="section section__about" id="about">
+  <div class="about__container">
+    <p class="section__label _anim-items _anim-no-hide">tradition and love</p>
+    <h2 class="section__title _anim-items _anim-no-hide">how it’s made?</h2>
+    <div class="about__content">
+      <div class="about__image-pad _anim-items _anim-no-hide">
+        <picture class="about__picture">
+          <source
+            srcset="
+              ./images/about/cow-desktop.png    1x,
+              ./images/about/cow-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-tablet.png    1x,
+              ./images/about/cow-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./images/about/cow-mobile.png    1x,
+              ./images/about/cow-mobile@2x.png 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img src="./images/about/cow-mobile.png" alt="cow on field" />
+        </picture>
+      </div>
+      <div class="about__card">
+        <p class="about__description _anim-items _anim-no-hide">
+          Ice is a place where you will become not only a little happier, but
+          also healthier. Health is the main value for us, and we follow it when
+          creating our handmade desserts.
+        </p>
+        <p class="about__main-text _anim-items _anim-no-hide">
+          We use traditional recipes and 100% natural ingredients. Our products
+          are so natural that they can be given to children from the age of
+          three years. Sweets lovers can expect 55 types of ice cream, 15 types
+          of coffee and 23 milkshakes.
+        </p>
+        <p class="about__main-text--tablet _anim-items _anim-no-hide">
+          This is enough to choose ice cream and coffee for any mood!
+        </p>
+        <button
+          type="button"
+          read-modal-open
+          class="button-yellow about__button"
+        >
+          Read more
+          <svg class="button-icon" height="12" width="12">
+            <!-- <use href="./images/symbol-defs.svg#icon-sign"></use> -->
+            <use href="./images/sprite.svg#icon-sign"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
