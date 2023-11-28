@@ -1,0 +1,126 @@
+.container__slider {
+  max-width: 1168px;
+  padding-top: 128px;
+  margin: 0 auto;
+}
+
+.slider__img {
+  margin: 0 auto;
+  padding-bottom: 32px;
+}
+
+.slider__text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.87;
+  text-align: center;
+
+  background: var(--green-bg-color);
+  border-radius: 24px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 39px 109px;
+  color: var(--white-content-color);
+  max-width: 968px;
+}
+
+.slider__geo {
+  text-align: center;
+  color: var(--black-content-color);
+  margin: 32px 0 15px 0;
+}
+
+.slick-dots li button {
+  color: var(--white-product-modal-color);
+}
+
+.li.slick-active button:before {
+  color: var(--green-bg-color);
+}
+
+.slick-dots li button:before {
+  font-family: slick;
+  font-size: 12px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: var(--green-reviews-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: var(--green-reviews-color);
+}
+
+element.style {
+  transition: opacity 1000ms ease 0s;
+  width: 1168px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 998;
+  opacity: 0;
+}
+
+@media screen and (max-width: 479px) {
+  .section__slider {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+
+  .slider__img {
+    padding-bottom: 32px;
+  }
+
+  .slider__text {
+    padding: 39px 34px;
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .section__slider {
+    padding-top: 80px;
+    padding-bottom: 48px;
+  }
+
+  .slider__img {
+    padding-bottom: 32px;
+  }
+
+  .slider__text {
+    padding: 39px 34px;
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section__slider {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .slider__img {
+    padding-bottom: 28px;
+  }
+
+  .slider__text {
+    padding: 29px 80px;
+    max-width: 705px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__slider {
+    padding-top: 128px;
+    padding-bottom: 100px;
+  }
+}
