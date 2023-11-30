@@ -1,0 +1,28 @@
+.container-contacts {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 320px) {
+  .container-contacts {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-contacts {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-contacts {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}

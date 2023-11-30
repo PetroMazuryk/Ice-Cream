@@ -20,3 +20,8 @@
   // line-height: $lh / $fs;
   letter-spacing: $ls;
 }
+
+@mixin font-contacts($fs, $lh) {
+  font-size: $fs;
+  // line-height: $lh / $fs;
+}
