@@ -42,6 +42,35 @@
           class="gallery_image gallery__desktop--expanding gallery__desktop--animation"
         />
       </picture>
+
+      <picture class="gallery__desktop--picture">
+        <source
+          srcset="
+            ./images/gallery/img3-desktop-1013.jpg   1x,
+            ./images/gallery/img3-desktop@2-2026.jpg 2x
+          "
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/img3-tablet-704.jpg    1x,
+            ./images/gallery/img3-tablet@2-1408.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/img3-mobile-279.jpg   1x,
+            ./images/gallery/img3-mobile@2-558.jpg 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/gallery/img3-desktop-1013.jpg"
+          alt="ice cream composition"
+          class="gallery__picture"
+        />
+      </picture>
     </div>
   </div>
 </section>
