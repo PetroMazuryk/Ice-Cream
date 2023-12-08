@@ -1,0 +1,75 @@
+<div hero-modal class="backdrop is-hidden">
+  <div class="modal-hero modal-container">
+    <button type="button" hero-modal-close class="modal-close-btn">
+      <svg width="20" height="20">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="modal-hero-form">
+      <p class="modal-hero-form__title">Buy now</p>
+      <div class="modal-hero-item">
+        <ul class="modal-hero-list">
+          <li class="modal-hero-form__ice-cream">
+            <div
+              class="modal-hero-form__circle modal-hero__circle--green"
+            ></div>
+            <div class="modal-hero-form__img modal-hero-form__img--green"></div>
+            <p>ice cream</p>
+          </li>
+          <li class="modal-hero-form__ice-coffee">
+            <div
+              class="modal-hero-form__circle modal-hero-form__circle--yellow"
+            ></div>
+            <div
+              class="modal-hero-form__img modal-hero-form__img--yellow"
+            ></div>
+            <p>ice coffee</p>
+          </li>
+          <li class="modal-hero-form__ice-milkshakes">
+            <div
+              class="modal-hero-form__circle modal-hero-form__circle--red"
+            ></div>
+            <div class="modal-hero-form__img modal-hero__img--red"></div>
+            <p>milkshakes</p>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-hero-form__label--bloc">
+        <label class="modal-hero-form__label">
+          <span class="modal-hero-form__wrapper">
+            <input
+              type="text"
+              class="modal-form__input"
+              name="user_name"
+              pattern="[a-zA-Zа-яА-яІіЇї]+"
+              placeholder="Name"
+              minlength="3"
+              required
+            />
+          </span>
+        </label>
+        <label class="modal-hero-form__label">
+          <span class="modal-hero-form__wrapper">
+            <input
+              class="modal-form__input"
+              type="tel"
+              name="tel"
+              pattern="[0-9]{10}"
+              placeholder="Phone"
+            />
+          </span>
+        </label>
+        <label class="modal-hero-form__label">
+          <textarea
+            class="modal-form__textarea"
+            name="comment"
+            placeholder="Comment"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" class="button-yellow modal-hero-form__button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
