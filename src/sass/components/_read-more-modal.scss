@@ -1,0 +1,67 @@
+.backdrop.is-hidden {
+  .read-more-modal__container {
+    transform: translate(-50%, -50%) rotateX(60deg);
+  }
+}
+
+.read-more-modal__container {
+  transform: translate(-50%, -50%) rotateX(0deg);
+  transition: transform 1500ms ease;
+}
+
+.read-more-modal__title {
+  font-family: Seymour One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  max-width: 322px;
+  margin-bottom: 32px;
+}
+
+.video {
+  border-radius: 10px;
+  border: 0;
+}
+
+.read-more-modal__video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.read-more-modal__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+@media screen and (max-width: 479px) {
+  .read-more-modal__container {
+    width: 90%;
+    padding: 28px;
+  }
+
+  .video {
+    width: 100%;
+    height: 199px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .read-more-modal__container {
+    width: 450px;
+    padding: 32px 60px;
+  }
+
+  .video {
+    width: 448px;
+    height: 205px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .read-more-modal__container {
+    width: 528px;
+  }
+}
