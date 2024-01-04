@@ -45,7 +45,6 @@ window.onload = () => {
   });
 
   playSlideGallery(currentSlideGallery);
-  playSlide(currentSlide);
 };
 
 function maxHeight() {
