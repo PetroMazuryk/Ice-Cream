@@ -54,6 +54,7 @@
 
   &:hover,
   &:focus {
+    cursor: url(../images/svg/cursor-pointer.svg), auto;
     background-color: var(--green-content-color);
   }
 
