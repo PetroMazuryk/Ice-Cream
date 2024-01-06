@@ -1,0 +1,39 @@
+.modal-form__input {
+  padding: 11px 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: var(--modal-form-input-color);
+  border: 1px solid var(--green-bg-color);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black-content-color);
+  outline: none;
+
+  &:placeholder-shown:required {
+    border-color: #84a178;
+  }
+
+  &:valid {
+    border-color: rgb(43, 142, 0);
+  }
+
+  &:invalid {
+    border-color: red;
+  }
+}
+
+.modal-form__textarea {
+  height: 84px;
+  padding: 11px 16px;
+  margin-bottom: 32px;
+  width: 100%;
+  background-color: var(--modal-form-input-color);
+  border: 1px solid var(--green-bg-color);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black-content-color);
+  resize: none;
+  outline: none;
+}
